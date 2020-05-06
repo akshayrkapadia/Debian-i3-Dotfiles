@@ -1,3 +1,5 @@
+xinit
+i3
 vim
 vim-airline
 fonts-font-awesome
