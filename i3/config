@@ -212,7 +212,7 @@ bar {
 		focused_workspace  #222D31 #2961DA #FFFFFF
 		active_workspace   #2961DA #222D31 #FFFFFF
 		inactive_workspace #222D31 #222D31 #FFFFFF
-		urgent_workspace   #222D31 #222D31 #E5201D
+		urgent_workspace   #FFFFFF #222D31 #E5201D
 
 	}
 
