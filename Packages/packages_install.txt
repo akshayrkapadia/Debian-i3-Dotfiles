@@ -2,11 +2,10 @@ xinit
 i3
 vim
 vim-airline
-fonts-font-awesome
 git
 curl
+stterm
 firefox-esr
-libpam0g-dev
 feh
 sxiv
 bluez
@@ -18,6 +17,9 @@ audacity
 htop
 ranger
 zsh
-libxcb1-dev
 gnome-boxes
 scrot
+cmus
+fonts-font-awesome
+libxcb1-dev
+libpam0g-dev
