@@ -12,7 +12,7 @@
 set $mod Mod4
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window pixel 1
+new_window pixel 5
 new_float normal
 
 # Hide borders
@@ -45,7 +45,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec st
+bindsym $mod+Return exec i3-sensible-terminal 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -100,6 +100,9 @@ bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
+
+# Force floating
+for_window [class="Sxiv" instance="sxiv"] floating enable
 
 # focus the parent container
 bindsym $mod+a focus parent

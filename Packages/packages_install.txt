@@ -4,7 +4,7 @@ vim
 vim-airline
 git
 curl
-stterm
+xfce4-terminal
 firefox-esr
 feh
 sxiv
@@ -21,5 +21,6 @@ gnome-boxes
 scrot
 cmus
 fonts-font-awesome
+fonts-powerline
 libxcb1-dev
 libpam0g-dev
