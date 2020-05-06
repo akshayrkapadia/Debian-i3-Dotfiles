@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Installs all the packages
+cat packages.txt | xargs sudo apt install
+
+# Creates home directories
+mkdir -p Pictures Music Downloads Videos Documents
+
+# Installs Ly as the login manager
+sudo chmod +x installLy && ./installScripts/installLy
+
+# Installs ZSH as the default shell
+sudo chmod +x installZsh && ./installScritps/installZsh
+cp .zshrc ~/
+
+# Copies the config files for i3
+cp -r i3 ~/.config
+cp -r i3status ~/.config
+sudo cp i3exit /usr/bin/
+
+# Copies wallpapers
+cp -r Wallpapers/ ~/Pictures
+
+# Copies custom scripts
+mkdir -p ~/.local/ && cp -r bin/
+
+sudo reboot
