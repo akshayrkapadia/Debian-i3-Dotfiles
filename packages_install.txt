@@ -16,3 +16,6 @@ audacity
 htop
 ranger
 zsh
+libxcb1-dev
+gnome-boxes
+scrot
