@@ -6,7 +6,7 @@
 
 ## Install
 
-`git clone https://github.com/akshayrkapadia/Debian-i3-Dotfiles.git`
-`cd Debian-i3-Dotfiles`
-`sudo chmod install`
-`./install`
+1. `git clone https://github.com/akshayrkapadia/Debian-i3-Dotfiles.git`
+2. `cd Debian-i3-Dotfiles`
+3. `sudo chmod install`
+4. `./install`
