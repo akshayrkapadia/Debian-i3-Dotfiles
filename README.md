@@ -10,3 +10,6 @@
 2. `cd Debian-i3-Dotfiles`
 3. `sudo chmod install`
 4. `./install`
+5. `cd ~/Debian-i3-Dotfiles/`
+6. `sudo chmod +x configurei3`
+7. `./configurei3`

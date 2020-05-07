@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Create home directories
+mkdir -p Pictures Music Downlaods Videos Documents
+
+# Install ZSH as the default shell
+sudo chmod +x installScripts/installZsh && ./installScripts/installZsh
+cp .zshrc ~/
+
+# Copy config files for i3
+cp -r ./config/i3 ~/.config/
+cp -r ./config/i3status ~/.config/
+sudo cp config/i3-dmenu-desktop /usr/bin/
+sudo cp config/i3exit /usr/bin/
+
+# Copy custom scripts
+mkdir -p ~/.local/ && cp -r bin/
+chmod +x ~/.local/bin/*
+
+# Install themes
+mkdir -p ~/.themes && cp themes/* ~/.themes/
+mkdir -p ~/.icons && cp icons/* ~/.icons/
+
+# Copy wallpapers
+cp -r ./wallpapers/ ~/Pictures/
+
+# Removes extra packages
+cat ./packages/packages_remove.txt | xargs sudo apt remove -y
+
+# Clean up system
+./bin/aptm
+
+# Reboot the system
+sudo reboot

@@ -1,45 +1,16 @@
 #!/bin/bash
 
-# Installs all the packages
+# Install all the packages
 cat ./packages/packages_install.txt | xargs sudo apt install -y
 
-# Creates home directories
-mkdir -p Pictures Music Downloads Videos Documents
-
-# Installs Ly as the login manager
+# Install Ly as the login manager
 sudo chmod +x installScripts/installLy && ./installScripts/installLy
 
-# Installs ZSH as the default shell
-sudo chmod +x installScripts/installZsh && ./installScritps/installZsh
-cp .zshrc ~/
-
-# Copies the config files for i3
-cp -r ./config/i3 ~/.config
-cp -r ./config/i3status ~/.config
-sudo cp config/i3exit /usr/bin/
-sudo cp config/i3-dmenu-desktop /usr/bin
-
-# Copies wallpapers
-cp -r ./wallpapers/ ~/Pictures
-
-# Copies custom scripts
-mkdir -p ~/.local/ && cp -r bin/
-chmod +x ~/.local/bin/*
-
-# Installs Brave Browser
+# Install Brave Browser
 sudo chmod +x installScripts/installBraveBrowser && ./installScripts/installBraveBrowser
 
-# Installs etcher
+# Install etcher
 sudo chmod +x installScripts/installEtcher && ./installScripts/installEtcher
 
-# Install themes
-mkdir -p ~/.themes && cp themes/* ~/.themes/
-mkdir -p ~/.icons && cp icons/* ~/.icons/
-
-# Removes extra packages
-cat ./packages/packages_remove.txt | xargs sudo apt remove -y
-
-# Clean up system
-./bin/aptm
-
+# Reboot the system
 sudo reboot
