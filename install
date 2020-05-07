@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Installs all the packages
-cat ./packages/packages_install.txt | xargs sudo apt install
+cat ./packages/packages_install.txt | xargs sudo apt install -y
 
 # Creates home directories
 mkdir -p Pictures Music Downloads Videos Documents
@@ -37,7 +37,7 @@ mkdir -p ~/.themes && cp themes/* ~/.themes/
 mkdir -p ~/.icons && cp icons/* ~/.icons/
 
 # Removes extra packages
-cat ./packages/packages_remove.txt | xargs sudo apt remove
+cat ./packages/packages_remove.txt | xargs sudo apt remove -y
 
 # Clean up system
 ./bin/aptm
