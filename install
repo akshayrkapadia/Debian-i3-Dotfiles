@@ -33,7 +33,6 @@ sudo chmod +x installScripts/installBraveBrowser && ./installScripts/installBrav
 mkdir -p ~/.themes && cp themes/* ~/.themes/
 mkdir -p ~/.icons && cp icons/* ~/.icons/
 
-
 # Removes extra packages
 cat ./packages/packages_remove.txt | xargs sudo apt remove
 

@@ -16,6 +16,7 @@ audacity
 htop
 ranger
 zsh
+neofetch
 gnome-boxes
 scrot
 cmus
