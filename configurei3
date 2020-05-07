@@ -13,6 +13,9 @@ cp -r ./config/i3status ~/.config/
 sudo cp config/i3-dmenu-desktop /usr/bin/
 sudo cp config/i3exit /usr/bin/
 
+# Copy Ly config file
+sudo cp ~/Debian-i3-Dotfiles/config/ly/config.ini /etc/ly/
+
 # Copy custom scripts
 mkdir -p ~/.local/ && cp -r bin/
 chmod +x ~/.local/bin/*
