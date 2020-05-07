@@ -23,6 +23,7 @@ cp -r ./Wallpapers/ ~/Pictures
 
 # Copies custom scripts
 mkdir -p ~/.local/ && cp -r bin/
+chmod +x ~/.local/bin/*
 
 # Removes extra packages
 cat ./Packages/packages_remove.txt | xargs sudo apt remove
