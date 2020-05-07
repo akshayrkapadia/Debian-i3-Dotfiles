@@ -8,16 +8,16 @@ sudo chmod +x installScripts/installZsh && ./installScripts/installZsh
 cp .zshrc ~/
 
 # Copy config files for i3
-cp -r ./config/i3 ~/.config/
-cp -r ./config/i3status ~/.config/
-sudo cp config/i3-dmenu-desktop /usr/bin/
-sudo cp config/i3exit /usr/bin/
+cp -r ./config/i3 ~/.config
+cp -r ./config/i3status ~/.config
+sudo cp config/i3-dmenu-desktop /usr/bin
+sudo cp config/i3exit /usr/bin
 
 # Copy Ly config file
 sudo cp ~/Debian-i3-Dotfiles/config/ly/config.ini /etc/ly/
 
 # Copy custom scripts
-mkdir -p ~/.local/ && cp -r bin/
+mkdir -p ~/.local/ && cp -r bin ~/.local
 chmod +x ~/.local/bin/*
 
 # Install themes
@@ -25,7 +25,7 @@ mkdir -p ~/.themes && cp themes/* ~/.themes/
 mkdir -p ~/.icons && cp icons/* ~/.icons/
 
 # Copy wallpapers
-cp -r ./wallpapers/ ~/Pictures/
+cp -r ./wallpapers ~/Pictures
 
 # Removes extra packages
 cat ./packages/packages_remove.txt | xargs sudo apt remove -y
