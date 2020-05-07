@@ -17,6 +17,7 @@ cp .zshrc ~/
 cp -r ./i3 ~/.config
 cp -r ./i3status ~/.config
 sudo cp i3exit /usr/bin/
+sudo cp i3-dmenu-desktop /usr/bin
 
 # Copies wallpapers
 cp -r ./Wallpapers/ ~/Pictures
