@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+# Script to search debian packages
+
+apt search $*
