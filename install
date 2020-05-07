@@ -7,10 +7,10 @@ cat ./Packages/packages_install.txt | xargs sudo apt install
 mkdir -p Pictures Music Downloads Videos Documents
 
 # Installs Ly as the login manager
-sudo chmod +x installLy && ./installScripts/installLy
+sudo chmod +x installScripts/installLy && ./installScripts/installLy
 
 # Installs ZSH as the default shell
-sudo chmod +x installZsh && ./installScritps/installZsh
+sudo chmod +x installScripts/installZsh && ./installScritps/installZsh
 cp .zshrc ~/
 
 # Copies the config files for i3
@@ -26,7 +26,13 @@ cp -r ./Wallpapers/ ~/Pictures
 mkdir -p ~/.local/ && cp -r bin/
 chmod +x ~/.local/bin/*
 
+# Installs Brave Browser
+sudo chmod +x installScripts/installBraveBrowser && ./installScripts/installBraveBrowser
+
 # Removes extra packages
 cat ./Packages/packages_remove.txt | xargs sudo apt remove
+
+# Clean up system
+./bin/aptm
 
 sudo reboot
