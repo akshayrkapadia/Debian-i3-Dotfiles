@@ -29,6 +29,9 @@ chmod +x ~/.local/bin/*
 # Installs Brave Browser
 sudo chmod +x installScripts/installBraveBrowser && ./installScripts/installBraveBrowser
 
+# Installs etcher
+sudo chmod +x installScripts/installEtcher && ./installScripts/installEtcher
+
 # Install themes
 mkdir -p ~/.themes && cp themes/* ~/.themes/
 mkdir -p ~/.icons && cp icons/* ~/.icons/
