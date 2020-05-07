@@ -7,3 +7,4 @@ sudo make install
 sudo systemctl enable ly.service
 cd ..
 sudo rm -R ly
+sudo cp ~/Debian-i3-Dotfiles/config/ly/config.ini /etc/ly/
