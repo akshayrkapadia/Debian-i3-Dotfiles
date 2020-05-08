@@ -25,7 +25,6 @@ fonts-powerline
 python-pip
 i3lock-fancy
 x11-xserver-utils
-apt-transport-https
 libxcb1-dev
 libpam0g-dev
 libx11-dev
