@@ -76,6 +76,11 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $mod+F2 exec firefox-esr
 bindsym $mod+F3 exec i3-sensible-terminal -e ranger
 
+# scrot
+bindsym Print exec scrot
+bindsym $mod+Print exec scrot -u
+bindsym $mod+Shift+Print exec scrot -s
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
