@@ -10,7 +10,7 @@ sudo chmod +x installScripts/installLy && ./installScripts/installLy
 sudo chmod +x installScripts/installBraveBrowser && ./installScripts/installBraveBrowser
 
 # Install etcher
-sudo chmod +x installScripts/installEtcher && ./installScripts/installEtcher
+# sudo chmod +x installScripts/installEtcher && ./installScripts/installEtcher
 
 # Reboot the system
 sudo reboot
