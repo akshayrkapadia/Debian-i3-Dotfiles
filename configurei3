@@ -5,7 +5,6 @@ mkdir -p ~/Pictures ~/Music ~/Downloads ~/Videos ~/Documents
 
 # Install ZSH as the default shell
 sudo chmod +x installScripts/installZsh && ./installScripts/installZsh
-cp .zshrc ~/
 
 # Install st
 sudo chmod +x installScripts/installSt && ./installScripts/installSt
