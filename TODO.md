@@ -1,7 +1,7 @@
 - Automatically apply themes (remove appearance)
 - Reduce grub timeout to 0
 - ~~Add home directories~~
-- Replace terminal emulator
+- ~~Replace terminal emulator~~
 - ~~Replace etcher~~
 - ~~Replace Brave (with Firefox?)~~
 - Fix Bluetooth (launch at startup)
