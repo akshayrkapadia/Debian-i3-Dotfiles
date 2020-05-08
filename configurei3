@@ -7,6 +7,9 @@ mkdir -p ~/Pictures ~/Music ~/Downloads ~/Videos ~/Documents
 sudo chmod +x installScripts/installZsh && ./installScripts/installZsh
 cp .zshrc ~/
 
+# Install st
+sudo chmod +x installScripts/installSt && ./installScripts/installSt
+
 # Copy config files for i3
 cp -r ./config/i3 ~/.config
 cp -r ./config/i3status ~/.config
