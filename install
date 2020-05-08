@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# Install all the packages
+# Install packages
 cat ./packages/packages_install.txt | xargs sudo apt install -y
+
+# Install dependencies
+cat ./packages/dependencies.txt | xargs sudo apt install -y
 
 # Install Ly as the login manager
 sudo chmod +x installScripts/installLy && ./installScripts/installLy

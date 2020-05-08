@@ -1,0 +1,5 @@
+libxcb1-dev
+libpam0g-dev
+libx11-dev
+libxft-dev
+libxinerama-dev

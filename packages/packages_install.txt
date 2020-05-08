@@ -28,8 +28,3 @@ mpv
 lyx
 i3lock-fancy
 x11-xserver-utils
-libxcb1-dev
-libpam0g-dev
-libx11-dev
-libxft-dev
-libxinerama-dev
