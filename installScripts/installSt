@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd st
+patch -p1 < patches/*
+sudo make install

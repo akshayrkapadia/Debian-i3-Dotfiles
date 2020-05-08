@@ -5,7 +5,6 @@ vim-airline
 git
 firefox-esr
 curl
-xfce4-terminal
 feh
 sxiv
 bluez
@@ -29,3 +28,7 @@ x11-xserver-utils
 apt-transport-https
 libxcb1-dev
 libpam0g-dev
+
+libx11-dev
+libxft-dev
+libxinerama-dev
