@@ -29,6 +29,7 @@ chmod +x ~/.local/bin/*
 mkdir -p ~/.themes && cp -r themes/themes/* ~/.themes/
 mkdir -p ~/.icons && cp -r themes/icons/* ~/.icons/
 cp themes/.gtkrc-2.0 ~/
+cp themes/.Xresources ~/
 
 # Copy wallpapers
 cp -r ./wallpapers ~/Pictures
