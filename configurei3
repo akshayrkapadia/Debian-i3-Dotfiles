@@ -25,11 +25,8 @@ sudo cp ~/Debian-i3-Dotfiles/config/ly/config.ini /etc/ly/
 mkdir -p ~/.local/ && cp -r bin ~/.local
 chmod +x ~/.local/bin/*
 
-# Install themes
-mkdir -p ~/.themes && cp -r themes/themes/* ~/.themes/
-mkdir -p ~/.icons && cp -r themes/icons/* ~/.icons/
-cp themes/.gtkrc-2.0 ~/
-cp themes/.Xresources ~/
+# Copy .Xresources for color scheme
+cp .Xresources ~/
 
 # Copy wallpapers
 cp -r ./wallpapers ~/Pictures
