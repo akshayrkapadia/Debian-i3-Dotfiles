@@ -3,6 +3,7 @@ i3
 vim
 vim-airline
 git
+firefox-esr
 curl
 xfce4-terminal
 feh

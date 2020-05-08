@@ -7,7 +7,7 @@ cat ./packages/packages_install.txt | xargs sudo apt install -y
 sudo chmod +x installScripts/installLy && ./installScripts/installLy
 
 # Install Brave Browser
-sudo chmod +x installScripts/installBraveBrowser && ./installScripts/installBraveBrowser
+# sudo chmod +x installScripts/installBraveBrowser && ./installScripts/installBraveBrowser
 
 # Install etcher
 # sudo chmod +x installScripts/installEtcher && ./installScripts/installEtcher
