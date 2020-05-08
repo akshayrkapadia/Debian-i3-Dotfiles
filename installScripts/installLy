@@ -1,9 +1,6 @@
 #!/bin/bash
 
-git clone https://github.com/cylgom/ly.git
-cd ly
+cd config/ly
 make github
 sudo make install
 sudo systemctl enable ly.service
-cd ..
-sudo rm -R ly
