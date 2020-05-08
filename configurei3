@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create home directories
-mkdir -p Pictures Music Downlaods Videos Documents
+mkdir -p ~/Pictures ~/Music ~/Downlaods ~/Videos ~/Documents
 
 # Install ZSH as the default shell
 sudo chmod +x installScripts/installZsh && ./installScripts/installZsh
@@ -21,8 +21,9 @@ mkdir -p ~/.local/ && cp -r bin ~/.local
 chmod +x ~/.local/bin/*
 
 # Install themes
-mkdir -p ~/.themes && cp -r themes/* ~/.themes/
-mkdir -p ~/.icons && cp -r icons/* ~/.icons/
+mkdir -p ~/.themes && cp -r themeing/themes/* ~/.themes/
+mkdir -p ~/.icons && cp -r themeing/icons/* ~/.icons/
+cp themeing/.gtkrc-2.0 ~/
 
 # Copy wallpapers
 cp -r ./wallpapers ~/Pictures
