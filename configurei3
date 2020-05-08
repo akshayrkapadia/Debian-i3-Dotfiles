@@ -34,6 +34,9 @@ cp -r ./wallpapers ~/Pictures
 cat ./packages/packages_remove.txt | xargs sudo apt remove -y
 yes | rm -r ~/.mlterm
 
+# Reduce grub timeout to 0
+sudo sed -i "/GRUB_TIMEOUT=5/GRUB_TIMEOUT=0/g" /etc/default/grub
+
 # Clean up system
 ./bin/aptm
 

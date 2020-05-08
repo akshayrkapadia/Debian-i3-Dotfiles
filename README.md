@@ -13,3 +13,16 @@
 5. `cd ~/Debian-i3-Dotfiles/`
 6. `sudo chmod +x configurei3`
 7. `./configurei3`
+
+## TODO
+- Automatically apply themes (remove appearance)
+- ~~Reduce grub timeout to 0~~
+- ~~Add home directories~~
+- ~~Replace terminal emulator~~
+- ~~Replace etcher~~
+- ~~Replace Brave (with Firefox?)~~
+- Fix Bluetooth (launch at startup)
+- Fix "No Battery" in status bar
+- Create dmenu script for scrot
+- ~~Find replacement for LibreOffice~~
+- Find replacement for Audacity
