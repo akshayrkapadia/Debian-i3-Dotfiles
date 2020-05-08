@@ -2,3 +2,4 @@
 
 cd dmenu
 sudo make clean install
+sudo cp /usr/local/bin/dmenu /usr/bin/dmenu
