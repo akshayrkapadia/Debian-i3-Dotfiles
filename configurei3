@@ -32,6 +32,7 @@ cp -r ./wallpapers ~/Pictures
 
 # Removes extra packages
 cat ./packages/packages_remove.txt | xargs sudo apt remove -y
+yes | rm -r ~/.mlterm
 
 # Clean up system
 ./bin/aptm
