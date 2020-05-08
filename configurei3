@@ -21,9 +21,9 @@ mkdir -p ~/.local/ && cp -r bin ~/.local
 chmod +x ~/.local/bin/*
 
 # Install themes
-mkdir -p ~/.themes && cp -r themeing/themes/* ~/.themes/
-mkdir -p ~/.icons && cp -r themeing/icons/* ~/.icons/
-cp themeing/.gtkrc-2.0 ~/
+mkdir -p ~/.themes && cp -r themes/themes/* ~/.themes/
+mkdir -p ~/.icons && cp -r themes/icons/* ~/.icons/
+cp themes/.gtkrc-2.0 ~/
 
 # Copy wallpapers
 cp -r ./wallpapers ~/Pictures
