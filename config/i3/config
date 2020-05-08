@@ -75,9 +75,13 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-# start applications
+# applications
 bindsym $mod+F2 exec firefox-esr
 bindsym $mod+F3 exec i3-sensible-terminal -e ranger
+bindsym Mod1+Ctrl+Delete --release exec xkill
+
+# autostart
+exec --no-startup-id exec blueman-applet
 
 # scrot
 bindsym Print exec scrot
@@ -251,8 +255,8 @@ bar {
 
 		#		    border  backgr. text
 		focused_workspace  #222526 #268BD2 #002B36
-		active_workspace   #393E40 #222526 #268BD2
-		inactive_workspace #222526 #222526 #268BD2
+		active_workspace   #222526 #222526 #268BD2
+		inactive_workspace #222526 #222526 #93A1A1
 		urgent_workspace   #93A1A1 #222526 #DC322F
 
 	}
