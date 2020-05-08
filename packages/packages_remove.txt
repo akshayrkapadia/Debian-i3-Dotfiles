@@ -1,4 +1,4 @@
-mlterm
-mlterm-common
 debian-reference-common
 khmerconverter
+mlterm
+mlterm-common
