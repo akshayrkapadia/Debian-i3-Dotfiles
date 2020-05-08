@@ -24,7 +24,7 @@ bindsym $mod+y border pixel 1
 bindsym $mod+n border normal
 
 # set wallpaper
-exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/Solarized_GNU.png
+exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/Triangle_Forest.png
 
 # set .Xresources
 exec --no-startup-id xrdb -merge ~/.Xresources
