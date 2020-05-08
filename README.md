@@ -23,6 +23,6 @@
 - ~~Replace Brave (with Firefox?)~~
 - ~~Fix Bluetooth (launch at startup)~~
 - ~~Fix "No Battery" in status bar~~
-- Create dmenu script for nmcli
+- ~~Create dmenu script for nmcli~~
 - ~~Find replacement for LibreOffice~~
 - Find replacement for Audacity
