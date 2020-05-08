@@ -24,7 +24,6 @@ fonts-font-awesome
 fonts-powerline
 python-pip
 i3lock-fancy
-lxappearance
 x11-xserver-utils
 apt-transport-https
 libxcb1-dev
