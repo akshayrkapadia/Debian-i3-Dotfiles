@@ -189,7 +189,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #4c7899 #285577 #ffffff #727272   #4C4B4B
+client.focused          #657B83 #285577 #ffffff #93A1A1   #4C4B4B
 client.focused_inactive #333333 #5f676a #ffffff #222222   #222222
 client.unfocused        #333333 #222222 #888888 #222222   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
