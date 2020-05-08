@@ -245,15 +245,15 @@ bar {
 
 	colors {
 
-		background #002B36
+		background #222526
 		statusline #93A1A1
-		separator  #268BD2
+		separator  #393E40
 
 		#		    border  backgr. text
-		focused_workspace  #002B36 #268BD2 #002B36
-		active_workspace   #268BD2 #002B36 #268BD2
-		inactive_workspace #002B36 #002B36 #268BD2
-		urgent_workspace   #268BD2 #002B36 #DC322F
+		focused_workspace  #222526 #268BD2 #002B36
+		active_workspace   #393E40 #222526 #268BD2
+		inactive_workspace #222526 #222526 #268BD2
+		urgent_workspace   #93A1A1 #222526 #DC322F
 
 	}
 
