@@ -16,6 +16,8 @@ imagemagick
 lyx
 mpv
 neofetch
+network-manager
+net-tools
 pulseaudio
 pulseaudio-module-bluetooth
 python-pip
