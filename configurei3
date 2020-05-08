@@ -10,6 +10,9 @@ cp .zshrc ~/
 # Install st
 sudo chmod +x installScripts/installSt && ./installScripts/installSt
 
+# Install dmenu
+sudo chmod +x installScripts/installDmenu && ./installScripts/installDmenu
+
 # Copy config files for i3
 cp -r ./config/i3 ~/.config
 cp -r ./config/i3status ~/.config

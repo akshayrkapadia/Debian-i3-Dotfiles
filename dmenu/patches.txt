@@ -1,0 +1,4 @@
+dmenu-fuzzymatch
+dmenu-fuzzyhighlight
+dmenu-mousesupport
+dmenu-numbers

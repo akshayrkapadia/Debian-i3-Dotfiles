@@ -1,5 +1,4 @@
 #!/bin/bash
 
-cd st
-# patch -p1 < patches/*
+cd dmenu
 sudo make clean install
