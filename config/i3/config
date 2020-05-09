@@ -102,9 +102,7 @@ exec --no-startup-id exec dunst
 exec --no-startup-id exec ./.local/bin/vpnconnect
 
 # scrot
-bindsym Print exec scrot && notify-send "Screenshot saved to ~/"
-bindsym Ctrl+Print exec scrot -u && notify-send "Screenshot saved to ~/"
-# bindsym Ctrl+Shift+Print exec scrot -s && notify-send "Screenshot saved to ~/"
+bindsym Print exec ./.local/bin/screenshot
 
 # change focus
 bindsym $mod+j focus left
