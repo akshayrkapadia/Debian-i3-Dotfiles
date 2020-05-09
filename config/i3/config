@@ -81,6 +81,10 @@ bindsym Ctrl+F4 exec ./.local/bin/displayselect
 # wifi setup
 bindsym Ctrl+F12 exec ./.local/bin/wificonnect
 
+# mount/unmount drives
+bindsym Ctrl+m exec ./.local/bin/mountdrive
+bindsym Ctrl+u exec ./.local/bin/unmountdrive
+
 # applications
 bindsym $mod+F2 exec firefox-esr
 bindsym $mod+F3 exec i3-sensible-terminal -e ranger
