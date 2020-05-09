@@ -66,14 +66,20 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec "xbacklight -inc 10;"
-bindsym XF86MonBrightnessDown exec "xbacklight -dec 10;"
+bindsym XF86MonBrightnessUp exec "./.local/bin/brightness +10;"
+bindsym XF86MonBrightnessDown exec "./.local/bin/brightness -10;"
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play-pause
 # bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+
+# display controls
+bindsym Ctrl+F4 exec ./.local/bin/displayselect
+
+# wifi setup
+bindsym Ctrl+F12 exec ./.local/bin/wificonnect
 
 # applications
 bindsym $mod+F2 exec firefox-esr

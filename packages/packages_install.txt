@@ -7,6 +7,7 @@ ffmpeg
 firefox-esr
 fonts-font-awesome
 fonts-powerline
+gedit
 git
 gnome-boxes
 htop
@@ -18,6 +19,8 @@ mpv
 neofetch
 network-manager
 net-tools
+nfts-3g
+notify-osd
 pulseaudio
 pulseaudio-module-bluetooth
 python-pip
@@ -27,5 +30,8 @@ sxiv
 vim
 vim-airline
 x11-xserver-utils
+xbacklight
+xcape
 xinit
+xwallpaper
 zsh

@@ -1,3 +1,4 @@
+libnotify-bin
 libpam0g-dev
 libx11-dev
 libxcb1-dev
