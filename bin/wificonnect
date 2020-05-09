@@ -7,6 +7,7 @@ if [[ "$ESSID" != "" ]]; then
 	if [[ "$PASSWORD" != "" ]]; then
 		if nmcli d wifi connect "$ESSID" password "$PASSWORD"; then
 			notify-send "Wifi" "Connected to $ESSID"
+			./.local/bin/vpnconnect
 		else
 			notify-send "Wifi" "Failed to connect to $ESSID" -u critical
 		fi

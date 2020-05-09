@@ -80,6 +80,10 @@ bindsym Ctrl+F4 exec ./.local/bin/displayselect
 # wifi setup
 bindsym Ctrl+F12 exec ./.local/bin/wificonnect
 
+# vpn setup
+bindsym Mod1+F12 exec ./.local/bin/vpnconnect
+bindsym Mod1+Shift+F12 exec sudo protonvpn d && notify-send "VPN" "Disconnected" -u critical
+
 # mount/unmount drives
 bindsym Ctrl+m exec ./.local/bin/mountdrive
 bindsym Ctrl+u exec ./.local/bin/unmountdrive
@@ -95,6 +99,7 @@ bindsym Mod1+Ctrl+Delete --release exec xkill
 # autostart
 exec --no-startup-id exec blueman-applet
 exec --no-startup-id exec dunst
+exec --no-startup-id exec ./.local/bin/vpnconnect
 
 # scrot
 bindsym Print exec scrot && notify-send "Screenshot saved to ~/"
