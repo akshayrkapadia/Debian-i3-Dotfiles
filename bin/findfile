@@ -1,0 +1,7 @@
+#!/bin/bash
+
+FILE=$(find ~/ | dmenu -p "File" -i -F -fn "monospace-13" -nb "#222526" -nf "#93A1A1" -sb "#268BD2" -sf "#002B36")
+if [ "$FILE" != "" ]
+then
+	i3-sensible-terminal -e vim $FILE
+fi
