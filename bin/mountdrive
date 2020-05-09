@@ -7,10 +7,9 @@ then
 	sudo mkdir -p /mnt$DRIVE
 	if sudo mount $DRIVE /mnt$DRIVE
 	then
-		notify-send "$DRIVE mounted to /mnt"
+		notify-send "Drives" "$DRIVE mounted to /mnt"
 	else
-		notify-send "Failed to mount $DRIVE"
-		sudo rm -r /mnt/dev
+		notify-send "Drives" "Failed to mount $DRIVE" -u critical
 	fi
 fi
 

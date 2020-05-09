@@ -8,7 +8,7 @@ if [[ "$ESSID" != "" ]]; then
 		if nmcli d wifi connect "$ESSID" password "$PASSWORD"; then
 			notify-send "Wifi" "Connected to $ESSID"
 		else
-			notify-send "Wifi" "Failed to connect to $ESSID"
+			notify-send "Wifi" "Failed to connect to $ESSID" -u critical
 		fi
 	fi	
 fi

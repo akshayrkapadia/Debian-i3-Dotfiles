@@ -6,9 +6,9 @@ if [[ $DRIVE != "" ]]
 then
 	if sudo umount /mnt$DRIVE*
 	then
-		notify-send "$DRIVE unmounted"
+		notify-send "Drives" "$DRIVE unmounted"
 	else
-		notify-send "Failed to unmount $DRIVE"
+		notify-send "Drives" "Failed to unmount $DRIVE" -u critical
 	fi
 fi
 

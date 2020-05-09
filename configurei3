@@ -15,6 +15,9 @@ sudo chmod +x installScripts/installDmenu && ./installScripts/installDmenu
 # Copy config files for i3
 cp -r ./config/i3 ~/.config
 cp -r ./config/i3status ~/.config
+cp -r ./config/dunst ~/.config
+cp -r ./config/mpd ~/.config
+cp -r ./config/ncmpcpp ~/.config
 sudo cp config/i3exit /usr/bin
 
 # Copy Ly config file
