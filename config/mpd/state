@@ -1,0 +1,43 @@
+sw_volume: 30
+audio_device_state:1:pulse audio
+audio_device_state:1:my_fifo
+state: pause
+current: 27
+time: 29.049000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Megadeth/Rust in Peace/04 - Five Magics.ogg
+1:Megadeth/Rust in Peace/05 - Poison Was the Cure.ogg
+2:Megadeth/Rust in Peace/06 - Lucretia.ogg
+3:Megadeth/Rust in Peace/09 - Rust in Peace… Polaris.ogg
+4:Megadeth/Rust in Peace/10 - My Creation.ogg
+5:Megadeth/Rust in Peace/11 - Rust in Peace… Polaris (demo).ogg
+6:Megadeth/Rust in Peace/12 - Holy Wars… The Punishment Due (demo).ogg
+7:Megadeth/Rust in Peace/08 - Dawn Patrol.ogg
+8:Megadeth/Rust in Peace/13 - Take No Prisoners (demo).ogg
+9:Megadeth/Rust in Peace/04 - Five Magics.ogg
+10:Megadeth/Rust in Peace/05 - Poison Was the Cure.ogg
+11:Megadeth/Rust in Peace/06 - Lucretia.ogg
+12:Megadeth/Rust in Peace/08 - Dawn Patrol.ogg
+13:Megadeth/Rust in Peace/09 - Rust in Peace… Polaris.ogg
+14:Megadeth/Rust in Peace/10 - My Creation.ogg
+15:Megadeth/Rust in Peace/11 - Rust in Peace… Polaris (demo).ogg
+16:Megadeth/Rust in Peace/12 - Holy Wars… The Punishment Due (demo).ogg
+17:Megadeth/Rust in Peace/13 - Take No Prisoners (demo).ogg
+18:Megadeth/Rust in Peace/04 - Five Magics.ogg
+19:Megadeth/Rust in Peace/05 - Poison Was the Cure.ogg
+20:Megadeth/Rust in Peace/06 - Lucretia.ogg
+21:Megadeth/Rust in Peace/08 - Dawn Patrol.ogg
+22:Megadeth/Rust in Peace/09 - Rust in Peace… Polaris.ogg
+23:Megadeth/Rust in Peace/10 - My Creation.ogg
+24:Megadeth/Rust in Peace/11 - Rust in Peace… Polaris (demo).ogg
+25:Megadeth/Rust in Peace/12 - Holy Wars… The Punishment Due (demo).ogg
+26:Megadeth/Rust in Peace/13 - Take No Prisoners (demo).ogg
+27:Trivium/The Sin And The Sentence/10 - The Revanchist.ogg
+playlist_end

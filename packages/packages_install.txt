@@ -1,7 +1,7 @@
 blueman
 bluez
-cmus
 curl
+dunst
 feh
 ffmpeg
 firefox-esr
@@ -15,12 +15,14 @@ i3
 i3lock-fancy
 imagemagick
 lyx
+mpc
+mpd
 mpv
+ncmpcpp
 neofetch
 network-manager
 net-tools
 nfts-3g
-notify-osd
 pulseaudio
 pulseaudio-module-bluetooth
 python-pip
@@ -33,5 +35,7 @@ x11-xserver-utils
 xbacklight
 xcape
 xinit
+xinput
 xwallpaper
+zathura
 zsh

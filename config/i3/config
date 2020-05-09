@@ -70,10 +70,9 @@ bindsym XF86MonBrightnessUp exec "./.local/bin/brightness +10;"
 bindsym XF86MonBrightnessDown exec "./.local/bin/brightness -10;"
 
 # Media player controls
-bindsym XF86AudioPlay exec playerctl play-pause
-# bindsym XF86AudioPause exec playerctl pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPrev exec mpc prev
 
 # display controls
 bindsym Ctrl+F4 exec ./.local/bin/displayselect
@@ -88,15 +87,19 @@ bindsym Ctrl+u exec ./.local/bin/unmountdrive
 # applications
 bindsym $mod+F2 exec firefox-esr
 bindsym $mod+F3 exec i3-sensible-terminal -e ranger
+bindsym $mod +F4 exec i3-sensible-terminal -e ncmpcpp
+
+# Kill window
 bindsym Mod1+Ctrl+Delete --release exec xkill
 
 # autostart
 exec --no-startup-id exec blueman-applet
+exec --no-startup-id exec dunst
 
 # scrot
-bindsym Print exec scrot
-bindsym $mod+Print exec scrot -u
-bindsym $mod+Shift+Print exec scrot -s
+bindsym Print exec scrot && notify-send "Screenshot saved to ~/"
+bindsym Ctrl+Print exec scrot -u && notify-send "Screenshot saved to ~/"
+# bindsym Ctrl+Shift+Print exec scrot -s && notify-send "Screenshot saved to ~/"
 
 # change focus
 bindsym $mod+j focus left

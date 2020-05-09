@@ -1,14 +1,16 @@
 #!/bin/bash
 
-DRIVE=$(lsblk -rpo "name,type,size,mountpoint" | awk '$4==""{printf "%s (%s)\n",$1,$3}' | awk '{print $1};' | grep "/dev/" | grep -v "sda" | dmenu -i -F -p "Drive" -fn "monospace-13" -nb "#222526" -nf "#93A1A1" -sb "#268BD2" -sf "#002B36")
+DRIVE=$(lsblk -rpo "name,type,size,mountpoint" | awk '$4==""{printf "%s (%s)\n",$1,$3}' | awk '{print $1};' | grep "/dev/" | grep -v "sda\|sr0" | dmenu -i -F -p "Drive" -fn "monospace-13" -nb "#222526" -nf "#93A1A1" -sb "#268BD2" -sf "#002B36")
 
 if [[ $DRIVE != "" ]]
 then
-	if sudo mount $DRIVE /mnt
+	sudo mkdir -p /mnt$DRIVE
+	if sudo mount $DRIVE /mnt$DRIVE
 	then
 		notify-send "$DRIVE mounted to /mnt"
 	else
 		notify-send "Failed to mount $DRIVE"
+		sudo rm -r /mnt/dev
 	fi
 fi
 
