@@ -94,7 +94,7 @@ bindsym $mod+Shift+d exec ./.local/bin/findfile
 # applications
 bindsym $mod+F2 exec firefox-esr
 bindsym $mod+F3 exec i3-sensible-terminal -e ranger
-bindsym $mod +F4 exec i3-sensible-terminal -e ncmpcpp
+bindsym $mod +F4 exec i3-sensible-terminal -e ncmpcpp 
 
 # Kill window
 bindsym Mod1+Ctrl+Delete --release exec xkill
