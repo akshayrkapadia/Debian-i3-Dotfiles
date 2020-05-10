@@ -1,12 +1,15 @@
 #!/bin/bash
 
-DRIVE=$(lsblk -rpo "name,type,size,mountpoint" | awk '$4==""{printf "%s (%s)\n",$1,$3}' | awk '{print $1};' | grep "/dev/" | grep -v "sda\|sr0" | dmenu -i -F -p "Drive" -fn "monospace-13" -nb "#222526" -nf "#93A1A1" -sb "#268BD2" -sf "#002B36")
+DRIVE=$(ls /mnt/dev/ | dmenu -i -F -p "Drive" -fn "monospace-13" -nb "#222526" -nf "#93A1A1" -sb "#268BD2" -sf "#002B36")
+
 
 if [[ $DRIVE != "" ]]
 then
-	if sudo umount /mnt$DRIVE*
+	MOUNTPOINT="/mnt/dev/$DRIVE"
+	if sudo umount $MOUNTPOINT
 	then
 		notify-send "Drives" "$DRIVE unmounted"
+		sudo rm -r $MOUNTPOINT
 	else
 		notify-send "Drives" "Failed to unmount $DRIVE" -u critical
 	fi
