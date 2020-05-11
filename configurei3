@@ -27,6 +27,10 @@ sudo cp ~/Debian-i3-Dotfiles/config/ly/config.ini /etc/ly/
 mkdir -p ~/.local/ && cp -r bin ~/.local
 chmod +x ~/.local/bin/*
 
+# Configure touchpad
+sudo mkdir -p /etc/X11/xorg.conf.d
+sudo cp ./config/30-touchpad.conf /etc/X11/xorg.conf.d/
+
 # Copy .Xresources for color scheme
 cp .Xresources ~/
 

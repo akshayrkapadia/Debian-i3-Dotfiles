@@ -4,7 +4,8 @@ DRIVE=$(lsblk -rpo "name,type,size,mountpoint" | awk '$4==""{printf "%s (%s)\n",
 
 if [[ $DRIVE != "" ]]
 then
-	MOUNTPOINT=$(echo /mnt$DRIVE | sed -n "s/[0-9]//p")
+	#DRIVE=$(echo $DRIVE | sed -n "s/\/dev\///p" | sed -n "s/[0-9]//p")
+	MOUNTPOINT="/mnt$DRIVE"
 	sudo mkdir -p $MOUNTPOINT
 	if sudo mount $DRIVE $MOUNTPOINT 
 	then
