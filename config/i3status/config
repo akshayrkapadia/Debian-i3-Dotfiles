@@ -14,8 +14,8 @@ general {
         color_degraded = "#DC322F"
 }
 
-order += "path_exists MOUNT"
 order += "cpu_usage"
+order += "path_exists MOUNT"
 order += "disk /"
 order += "path_exists VPN"
 order += "wireless _first_"

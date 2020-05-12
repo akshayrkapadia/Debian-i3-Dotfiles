@@ -102,7 +102,7 @@ bindsym Mod1+Ctrl+Delete --release exec xkill
 # autostart
 exec --no-startup-id exec blueman-applet
 exec --no-startup-id exec dunst
-exec --no-startup-id exec ./.local/bin/vpnconnect
+exec --no-startup-id exec sleep 5 && ./.local/bin/vpnconnect
 
 # scrot
 bindsym Print exec ./.local/bin/screenshot
@@ -153,6 +153,7 @@ bindsym $mod+space focus mode_toggle
 
 # Force floating
 for_window [class="Sxiv" instance="sxiv"] floating enable
+for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
 
 # focus the parent container
 bindsym $mod+a focus parent
