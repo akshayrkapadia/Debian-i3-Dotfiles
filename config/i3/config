@@ -64,6 +64,7 @@ bindsym $mod+d exec dmenu_run -i -F -p "Run" -fn "monospace-13" -nb "#222526" -n
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym Ctrl+F6 exec pavucontrol
 
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec "./.local/bin/brightness +10;"
@@ -93,8 +94,10 @@ bindsym $mod+Shift+d exec ./.local/bin/findfile
 
 # applications
 bindsym $mod+F2 exec firefox-esr
-bindsym $mod+F3 exec i3-sensible-terminal -e ranger
-bindsym $mod +F4 exec i3-sensible-terminal -e ncmpcpp 
+bindsym $mod+F3 exec thunar
+bindsym $mod+Shift+F3 exec i3-sensible-terminal -e ranger
+bindsym $mod+F4 exec atom
+bindsym $mod +F5 exec i3-sensible-terminal -e ncmpcpp
 
 # Kill window
 bindsym Mod1+Ctrl+Delete --release exec xkill
@@ -102,7 +105,7 @@ bindsym Mod1+Ctrl+Delete --release exec xkill
 # autostart
 exec --no-startup-id exec blueman-applet
 exec --no-startup-id exec dunst
-exec --no-startup-id exec sleep 5 && ./.local/bin/vpnconnect
+exec --no-startup-id exec ./.local/bin/vpnconnect
 
 # scrot
 bindsym Print exec ./.local/bin/screenshot
