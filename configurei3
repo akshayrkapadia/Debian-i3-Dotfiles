@@ -12,6 +12,9 @@ sudo chmod +x installScripts/installSt && ./installScripts/installSt
 # Install dmenu
 sudo chmod +x installScripts/installDmenu && ./installScripts/installDmenu
 
+# Install Brave Browser
+sudo chmod +x installScripts/installBrave && ./installScripts/installBrave
+
 # Copy config files for i3
 cp -r ./config/i3 ~/.config
 cp -r ./config/i3status ~/.config
