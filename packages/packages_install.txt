@@ -8,14 +8,13 @@ ffmpeg
 firefox-esr
 fonts-font-awesome
 fonts-powerline
-gedit
 git
 gnome-boxes
 htop
 i3
 i3lock-fancy
 imagemagick
-lyx
+libreoffice
 mpc
 mpd
 mpv
