@@ -43,5 +43,8 @@ centered_cursor = "yes"
 enable_window_title = "yes"
 external_editor = "vim"
 
-
+startup_screen = "media_library"
+startup_slave_screen = "playlist"
+user_interface = "alternative"
+jump_to_now_playing_song_at_start = "yes"
 execute_on_song_change = notify-send "Now Playing" "$(mpc --format '%title% \n%artist% - %album%' current)"
