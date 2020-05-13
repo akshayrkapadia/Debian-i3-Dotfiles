@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cp ~/.local/bin/* ./bin/
+cp ~/.config/i3/config ./config/i3/config
+cp ~/.config/i3status/config ./config/i3status/config
+cp ~/.config/dunst/* ./config/dunst/
+cp ~/.config/ncmpcpp/* ./config/ncmpcpp
+cp ~/.config/mpd/* ./config/mpd/
