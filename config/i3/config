@@ -93,7 +93,8 @@ bindsym Ctrl+u exec ./.local/bin/unmountdrive
 bindsym $mod+Shift+d exec ./.local/bin/findfile
 
 # applications
-bindsym $mod+F2 exec firefox-esr
+bindsym $mod+F2 exec brave-browser
+bindsym $mod+Shift+F2 exec ./.local/bin/websearch
 bindsym $mod+F3 exec thunar
 bindsym $mod+Shift+F3 exec i3-sensible-terminal -e ranger
 bindsym $mod+F4 exec atom
