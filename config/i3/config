@@ -107,6 +107,7 @@ bindsym Mod1+Ctrl+Delete --release exec xkill
 exec --no-startup-id exec blueman-applet
 exec --no-startup-id exec dunst
 exec --no-startup-id exec ./.local/bin/vpnconnect
+#exec --no-startup-id exec redshift
 
 # scrot
 bindsym Print exec ./.local/bin/screenshot
