@@ -92,6 +92,10 @@ bindsym Ctrl+u exec ./.local/bin/unmountdrive
 # file finder
 bindsym $mod+Shift+d exec ./.local/bin/findfile
 
+# clipboard
+bindsym $mod+x exec ./.local/bin/copy
+bindsym $mod+Shift+x exec ./.local/bin/sel
+
 # applications
 bindsym $mod+F2 exec brave-browser
 bindsym $mod+Shift+F2 exec ./.local/bin/websearch
