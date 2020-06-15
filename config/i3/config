@@ -92,6 +92,9 @@ bindsym Ctrl+u exec ./.local/bin/unmountdrive
 # file finder
 bindsym $mod+Shift+d exec ./.local/bin/findfile
 
+# edit configs
+bindsym $mod+Shift+e exec ./.local/bin/editconfig
+
 # clipboard
 bindsym $mod+x exec ./.local/bin/copy
 bindsym $mod+Shift+x exec ./.local/bin/sel
@@ -101,7 +104,8 @@ bindsym $mod+F2 exec brave-browser
 bindsym $mod+Shift+F2 exec ./.local/bin/websearch
 bindsym $mod+F3 exec thunar
 bindsym $mod+Shift+F3 exec i3-sensible-terminal -e ranger
-bindsym $mod+F4 exec atom
+bindsym $mod+F4 exec i3-sensible-terminal -e vim
+bindsym $mod+Shift+F4 exec atom
 bindsym $mod +F5 exec i3-sensible-terminal -e ncmpcpp
 
 # Kill window

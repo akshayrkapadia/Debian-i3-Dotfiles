@@ -21,6 +21,8 @@ cp -r ./config/i3status ~/.config
 cp -r ./config/dunst ~/.config
 cp -r ./config/mpd ~/.config
 cp -r ./config/ncmpcpp ~/.config
+mkdir -p ~/.vim && cp -r ./config/vim/* ~/.vim
+mv ~/.vim/.vimrc ~/
 sudo cp config/i3exit /usr/bin
 
 # Copy Ly config file

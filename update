@@ -6,3 +6,5 @@ cp ~/.config/i3status/config ./config/i3status/config
 cp ~/.config/dunst/* ./config/dunst/
 cp ~/.config/ncmpcpp/* ./config/ncmpcpp
 cp ~/.config/mpd/mpd.conf ./config/mpd/
+cp ~/.vim/* ./config/vim/
+cp ~/.vimrc ./config/vim/
