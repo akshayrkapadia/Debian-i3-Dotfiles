@@ -1,9 +1,9 @@
 #!/bin/bash
 
-ESSID=$(nmcli d wifi list | grep "Mbit/s" | awk '{print $1}' | grep -v "*\|--" | dmenu -i -p "Wifi Network" -F -fn "monospace-13" -nb "#222526" -nf "#93A1A1" -sb "#268BD2" -sf "#002B36")
+ESSID=$(nmcli d wifi list | grep "Mbit/s" | awk '{print $1}' | grep -v "*\|--" | dmenu -i -p "Wifi Network" -F -fn "monospace-13")
 
 if [[ "$ESSID" != "" ]]; then
-	PASSWORD=$(dmenu -i -p "Password" -P -F -fn "monospace-13" -nb "#222526" -nf "#93A1A1" -sb "#268BD2" -sf "#002B36")
+	PASSWORD=$(dmenu -i -p "Password" -P -F -fn "monospace-13")
 	if [[ "$PASSWORD" != "" ]]; then
 		if nmcli d wifi connect "$ESSID" password "$PASSWORD"; then
 			notify-send "Wifi" "Connected to $ESSID"

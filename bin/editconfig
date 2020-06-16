@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONFIG=$( echo -e "i3\ni3status\nvim" | dmenu -i -p "Config" -F -fn "monospace-13" -nb "#222526" -nf "#93A1A1" -sb "#268BD2" -sf "#002B36")
+CONFIG=$( echo -e "i3\ni3status\nvim" | dmenu -i -p "Config" -F -fn "monospace-13")
 
 i3=~/.config/i3/config
 i3status=~/.config/i3status/config

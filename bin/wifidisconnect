@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ESSID=$(nmcli connection show --active | awk '{$NF=""}NF' | awk '{$NF=""}NF' | awk '{$NF=""}NF'| grep -v "NAME" | sed 's/ *$//'| dmenu -i -p "Wifi Network" -F -fn "monospace-13" -nb "#222526" -nf "#93A1A1" -sb "#268BD2" -sf "#002B36")
+ESSID=$(nmcli connection show --active | awk '{$NF=""}NF' | awk '{$NF=""}NF' | awk '{$NF=""}NF'| grep -v "NAME" | sed 's/ *$//'| dmenu -i -p "Wifi Network" -F -fn "monospace-13")
 
 if [[ "$ESSID" != "" ]]; then
 	if nmcli con down "$ESSID"; then

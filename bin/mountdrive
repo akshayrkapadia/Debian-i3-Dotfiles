@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DRIVE=$(lsblk -rpo "name,type,size,mountpoint" | awk '$4==""{printf "%s (%s)\n",$1,$3}' | awk '{print $1};' | grep "/dev/" | grep -v "sda\|sr0" | grep "[0-9]" |  dmenu -i -F -p "Drive" -fn "monospace-13" -nb "#222526" -nf "#93A1A1" -sb "#268BD2" -sf "#002B36")
+DRIVE=$(lsblk -rpo "name,type,size,mountpoint" | awk '$4==""{printf "%s (%s)\n",$1,$3}' | awk '{print $1};' | grep "/dev/" | grep -v "sda\|sr0" | grep "[0-9]" |  dmenu -i -F -p "Drive")
 
 if [[ $DRIVE != "" ]]
 then
