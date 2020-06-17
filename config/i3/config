@@ -287,10 +287,10 @@ bar {
 		separator  #4b5263
 
 		#                   border  backgr. text
-		focused_workspace  #282c34 #61afef #282c34
-		active_workspace   #282c34 #282c34 #61afef
-		inactive_workspace #282c34 #282c34 #abb2bf
-		urgent_workspace   #e06c75 #282c34 #be5046
+		focused_workspace  #1d2026 #2f90d6 #1d2026
+		active_workspace   #1d2026 #1d2026 #2f90d6
+		inactive_workspace #1d2026 #1d2026 #abb2bf
+		urgent_workspace   #e06c75 #1d2026 #be5046
 
 	}
 
